@@ -105,3 +105,8 @@ button {
 .fs-600 {
     line-height: 1.1;
 }
+
+.nav-container__list {
+  gap: 5em;
+  list-style: none;
+}
