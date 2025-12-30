@@ -131,7 +131,7 @@ button {
 .nav-line {
   flex: 3;
   position: relative;
-  left: 30px;
+  left: 2em;
   height: 0;
   width: 4em;
   border: 0.5px solid hsl(0, 0%, 59%);
@@ -160,4 +160,8 @@ button {
 body {
   background: url("../src/assets/home/background-home-desktop.jpg") center center / cover no-repeat;
   min-block-size: 100vh;
+}
+
+.logo {
+  flex: 1;
 }
