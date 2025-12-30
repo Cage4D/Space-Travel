@@ -22,6 +22,7 @@
 
 * {
   margin: 0;
+  padding: 0;
   line-height: calc(1em + 0.5rem);
 }
 
@@ -106,7 +107,57 @@ button {
     line-height: 1.1;
 }
 
+.nav_bar {
+  position: relative;
+  left: 3.8%;
+  display: flex;
+  width: 96.2%;
+  height: 96px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.nav-container {
+  background-color: hsl(var(--clr-light) / 0.04);
+  backdrop-filter: blur(81.55px);
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 6;
+}
+
+.nav-line {
+  flex: 3;
+  position: relative;
+  left: 30px;
+  height: 0;
+  width: 4em;
+  border: 0.5px solid hsl(0, 0%, 59%);
+  z-index: 2;
+}
+
 .nav-container__list {
-  gap: 5em;
+  display: flex;
+  gap: 3em;
   list-style: none;
+  justify-self: center;
+  align-self: center;
+  font-family: var(--ff-sans-cond);
+  text-transform: uppercase;
+}
+
+.nav-container__list > * {
+  display: flex;
+  gap: 0.25em;
+}
+
+.nav-container__list span {
+  font-weight: 700;
+}
+
+body {
+  background: url("../src/assets/home/background-home-desktop.jpg") center center / cover no-repeat;
+  min-block-size: 100vh;
 }
