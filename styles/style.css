@@ -47,16 +47,6 @@ button {
   cursor: pointer;
 }
 
-.flex {
-  display: flex;
-  gap: var(--gap, 1rem);
-}
-
-.grid {
-  display: grid;
-  gap: var(--gap, 1rem);
-}
-
 .sr-only {
   position: absolute;
   width: 1px;
