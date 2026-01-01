@@ -158,11 +158,10 @@ body {
 
 .home {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-inline: 165px;
-  align-items: center;
-  /* border: 1px solid white; */
-  min-block-size: 100%;
+  grid-template-columns: 4fr 6fr;
+  margin-inline: 10.3125rem;
+  place-items: center;
+  margin-top: 10rem;
 }
 
 .home-text {
@@ -170,6 +169,7 @@ body {
   display: flex;
   flex-direction: column;
   font-size: var(--fs-500);
+  height: 23.875rem;
   gap: 24px;
 }
 
@@ -200,4 +200,5 @@ body {
   color: hsl( var(--clr-dark));
   background-color: hsl(var(--clr-white));
   border-radius: 50%;
+  justify-self: end;
 }
