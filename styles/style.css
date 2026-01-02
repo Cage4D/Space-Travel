@@ -136,6 +136,9 @@ button {
   align-self: center;
   font-family: var(--ff-sans-cond);
   text-transform: uppercase;
+  color: hsl( var(--clr-white) );
+  letter-spacing: 2.7px;
+  font-size: var(--fs-600);
 }
 
 .nav-container__list > * {
