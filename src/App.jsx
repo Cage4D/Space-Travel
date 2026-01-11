@@ -17,7 +17,6 @@ function App() {
           Explore
         </a>
       </section>
-      {console.log("is this even working???")}
     </>
   );
 }
