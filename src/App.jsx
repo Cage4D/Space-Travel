@@ -13,7 +13,7 @@ function App() {
           back, and relax because we'll give you a truly out of this world
           experience!
         </p>
-        <a href="#" className="home-explore">
+        <a href="#" className="home-explore"></a>
         <a href="#" className="home-explore">
           Explore
         </a>
