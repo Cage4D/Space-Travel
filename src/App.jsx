@@ -14,7 +14,6 @@ function App() {
           experience!
         </p>
         <a href="#" className="home-explore">
-        <a href="#" className="home-explore">
           Explore
         </a>
       </section>
