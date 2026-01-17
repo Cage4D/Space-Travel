@@ -1,9 +1,9 @@
 function NavBar() {
   return (
-    <nav class="nav_bar">
+    <nav className="nav_bar">
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        class="logo"
+        className="logo"
         width="48"
         height="48"
       >
@@ -15,9 +15,9 @@ function NavBar() {
           />
         </g>
       </svg>
-      <p class="nav-line"></p>
-      <div class="nav-container">
-        <ul class="nav-container__list">
+      <p className="nav-line"></p>
+      <div className="nav-container">
+        <ul className="nav-container__list">
           <li>
             <span>00</span>Home
           </li>

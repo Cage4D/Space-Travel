@@ -4,8 +4,8 @@ function App() {
   return (
     <>
       <NavBar/>
-      <section class="home">
-        <p class="home-text">
+      <section className="home">
+        <p className="home-text">
           <span class="home-text__travel">so, you want to travel to</span>
           <span class="home-text__space">space</span>
           Let's face it; if you want to go to space, you might as well genuinely
@@ -13,7 +13,7 @@ function App() {
           back, and relax because we'll give you a truly out of this world
           experience!
         </p>
-        <a href="#" class="home-explore">
+        <a href="#" className="home-explore">
           Explore
         </a>
       </section>
