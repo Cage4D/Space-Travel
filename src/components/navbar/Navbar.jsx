@@ -1,4 +1,6 @@
-function NavBar() {
+import "./navbar.css"
+
+function Navbar() {
   return (
     <nav className="nav_bar">
       <svg
@@ -36,4 +38,4 @@ function NavBar() {
   );
 }
 
-export default NavBar;
+export default Navbar;
