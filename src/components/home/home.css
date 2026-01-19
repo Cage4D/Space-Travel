@@ -44,3 +44,31 @@
   border-radius: 50%;
   justify-self: end;
 }
+
+@media (width <= 1024px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home-text__travel {
+    font-size: 1.25rem;
+    letter-spacing: 3.38px;
+    text-align: center;
+  }
+
+  .home-text__space {
+    font-size: 9.375rem;
+  }
+
+  .home-text {
+    text-align: center;
+  }
+
+  .home-explore {
+    height: 15.125rem;
+    margin-bottom: 2rem;
+  }
+}

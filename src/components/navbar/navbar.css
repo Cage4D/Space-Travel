@@ -54,3 +54,15 @@
 .logo {
   flex: 1;
 }
+
+@media (width <= 1024px) {
+  ul li > span {
+    display: none;
+  }
+
+  .nav-container__list {
+    font-size: 14px;
+    letter-spacing: 2.36px;
+    gap: 1.5em;
+  }
+}
