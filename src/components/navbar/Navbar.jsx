@@ -1,4 +1,4 @@
-import "./navbar.css"
+import "./navbar.css";
 
 function Navbar() {
   return (
@@ -18,6 +18,12 @@ function Navbar() {
         </g>
       </svg>
       <p className="nav-line"></p>
+      <input type="checkbox" className="menu-toggle" id="menu-toggle" />
+      <label htmlFor="menu-toggle" className="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
       <div className="nav-container">
         <ul className="nav-container__list">
           <li>
