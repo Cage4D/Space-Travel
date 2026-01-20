@@ -62,7 +62,7 @@ body {
   }
 }
 
-@media(width <= 580px) {
+@media(width <= 768px) {
   body {
     background: url("../src/assets//home/background-home-mobile.jpg") center center / cover no-repeat;
   }

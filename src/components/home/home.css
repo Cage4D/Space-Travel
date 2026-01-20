@@ -69,7 +69,27 @@
 
   .home-explore {
     height: 15.125rem;
-    margin-bottom: 2rem;
     margin: 4rem 0;
+  }
+}
+
+@media (width <= 768px) {
+  .home-text__travel {
+    font-size: 1rem;
+    white-space: nowrap;
+  }
+
+  .home-text__space {
+    font-size: 5rem;
+  }
+
+  .home-text {
+    font-size: 15px;
+  }
+
+  .home-explore {
+    height: 9.375rem;
+    margin: 2rem 0;
+    font-size: 1.25rem;
   }
 }
