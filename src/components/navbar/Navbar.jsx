@@ -21,16 +21,20 @@ function Navbar() {
       <div className="nav-container">
         <ul className="nav-container__list">
           <li>
-            <span>00</span>Home
+            <span>00</span>
+            <a href="#">Home</a>
           </li>
           <li>
-            <span>01</span>Destination
+            <span>01</span>
+            <a href="#Destination">Destination</a>
           </li>
           <li>
-            <span>02</span>Crew
+            <span>02</span>
+            <a href="#Crew">Crew</a>
           </li>
           <li>
-            <span>03</span>Technology
+            <span>03</span>
+            <a href="#Technology">Technology</a>
           </li>
         </ul>
       </div>

@@ -60,6 +60,10 @@
     display: none;
   }
 
+  .nav_bar {
+    margin-top: 0px;
+  }
+
   .nav-container__list {
     font-size: 14px;
     letter-spacing: 2.36px;
