@@ -40,10 +40,12 @@
   color: hsl(var(--clr-white));
   letter-spacing: 2.7px;
   font-size: var(--fs-600);
+  height: 100%;
 }
 
 .nav-container__list > * {
   display: flex;
+  align-items: center;
   gap: 0.25em;
 }
 
@@ -54,6 +56,27 @@
 .nav-container__list a {
   text-decoration: none;
   color: hsl(var(--clr-white));
+}
+
+.nav-container__list li {
+  height: 100%;
+  position: relative;
+}
+
+.nav-container__list li::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: hsl(var(--clr-light));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.nav-container__list li:hover::after {
+  opacity: 0.5;
 }
 
 .logo {
