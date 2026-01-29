@@ -1,9 +1,10 @@
-import React from "react"
-import "./home.css"
+import React from "react";
+import "./home.css";
 
 function Home() {
-    return (
-        <section className="home">
+  return (
+    <div className="home-container">
+      <section className="home">
         <p className="home-text">
           <span className="home-text__travel">so, you want to travel to</span>
           <span className="home-text__space">space</span>
@@ -16,7 +17,8 @@ function Home() {
           Explore
         </a>
       </section>
-    )
+    </div>
+  );
 }
 
 export default Home;

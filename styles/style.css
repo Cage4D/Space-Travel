@@ -47,23 +47,8 @@ button {
   cursor: pointer;
 }
 
-body {
-  background: url("../src/assets/home/background-home-desktop.jpg") center center / cover no-repeat;
-  min-block-size: 100vh;
-}
-
 @media (width <= 1024px) {
-  body {
-    background: url("../src/assets/home/background-home-tablet.jpg") center center / cover no-repeat;
-  }
-
   .nav-line {
     display: none;
-  }
-}
-
-@media(width <= 768px) {
-  body {
-    background: url("../src/assets//home/background-home-mobile.jpg") center center / cover no-repeat;
   }
 }

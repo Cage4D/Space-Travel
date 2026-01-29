@@ -1,4 +1,13 @@
+.home-container {
+  min-height: 100vh;
+  width: 100%;
+  background: url("../src/assets/home/background-home-desktop.jpg") center center / cover no-repeat;
+  display: grid;
+  place-items: center;
+}
+
 .home {
+  position: relative;
   display: grid;
   grid-template-columns: 4fr 6fr;
   margin-inline: 10.3125rem;
@@ -62,6 +71,10 @@
 }
 
 @media (width <= 1024px) {
+  .home-container {
+    background: url("../src/assets/home/background-home-tablet.jpg") center center / cover no-repeat;
+  }
+
   .home {
     display: flex;
     flex-direction: column;
@@ -90,6 +103,13 @@
 }
 
 @media (width <= 768px) {
+  .home-container {
+    background: url("../src/assets//home/background-home-mobile.jpg") center center / cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .home-text__travel {
     font-size: 1rem;
     white-space: nowrap;
