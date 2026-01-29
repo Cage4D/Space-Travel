@@ -53,7 +53,7 @@
   font-weight: 700;
 }
 
-.nav-container__list a {
+.nav-link {
   text-decoration: none;
   color: hsl(var(--clr-white));
 }
