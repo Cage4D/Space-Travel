@@ -7,16 +7,19 @@
 }
 
 .destination-contents {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 5fr;
   color: white;
+  margin-inline: 10.3125rem;
+  margin-top: 10rem;
+  border: 1px solid red;
 }
 
-.destination-contents__image-container {
-  display: flex;
+.destination-text {
+  grid-column: 1 / 3;
 }
 
-.destination-contents__info {
-
-}
 
 @media (width <= 1024px) {
   .destination-container {
