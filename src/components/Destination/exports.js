@@ -6,3 +6,6 @@ export { default as europaWebp } from "../../assets/destination/image-europa.web
 
 export { default as marsPng } from "../../assets/destination/image-mars.png"
 export { default as marsWebp } from "../../assets/destination/image-mars.webp"
+
+export {default as titanPng } from "../../assets/destination/image-titan.png"
+export { default as titanWebp } from "../../assets/destination/image-titan.webp"
