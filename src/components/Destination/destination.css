@@ -20,6 +20,27 @@
   grid-column: 1 / 3;
 }
 
+.destination-contents__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.planetary-body-names-group {
+  display: flex;
+  gap: 1rem;
+}
+
+.divisor {
+  border-top: 1px solid #383B4B;
+}
+
+.planetary-body-info-container {
+  display: flex;
+}
+
+div[class^="info-"] {
+  display: grid;
+}
 
 @media (width <= 1024px) {
   .destination-container {
