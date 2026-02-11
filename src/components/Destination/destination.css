@@ -23,6 +23,7 @@
 .destination-contents__info {
   display: flex;
   flex-direction: column;
+  border: 1px solid blue;
 }
 
 .planetary-body-names-group {
@@ -38,12 +39,30 @@
   font-family: var(--ff-sans-cond);
 }
 
+.planetary-body-name {
+  font-size: 100px;
+  font-family: var(--ff-serif);
+  font-weight: normal;
+  margin-top: 1rem;
+}
+
+.planetary-body-desc {
+  font-size: 1.125rem;
+  font-family: var(--ff-sans-normal);
+  text-align: left;
+  line-height: 32px;
+  color: var(--clr-light);
+  font-style: normal;
+  margin-block: 1rem;
+}
+
 .divisor {
   border-top: 1px solid #383B4B;
 }
 
 .planetary-body-info-container {
   display: flex;
+  margin-top: 1rem;
 }
 
 div[class^="info-"] {
