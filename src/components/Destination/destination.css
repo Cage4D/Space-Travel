@@ -41,11 +41,28 @@
 }
 
 .planetary-body-names-group > * {
+  position: relative;
   background: none;
   color: hsl(var(--clr-white));
   text-transform: uppercase;
   letter-spacing: 2.7px;
   font-family: var(--ff-sans-cond);
+}
+
+.planetary-body-names-group > *::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: hsl(var(--clr-light));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.planetary-body-names-group > *:hover::after {
+  opacity: 0.5;
 }
 
 .planetary-body-name {
