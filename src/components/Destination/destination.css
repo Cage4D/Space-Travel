@@ -30,6 +30,14 @@
   gap: 1rem;
 }
 
+.planetary-body-names-group > * {
+  background: none;
+  color: hsl(var(--clr-white));
+  text-transform: uppercase;
+  letter-spacing: 2.7px;
+  font-family: var(--ff-sans-cond);
+}
+
 .divisor {
   border-top: 1px solid #383B4B;
 }
