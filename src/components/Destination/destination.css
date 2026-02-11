@@ -32,6 +32,7 @@
 .destination-contents__info {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .planetary-body-names-group {
@@ -51,7 +52,6 @@
   font-size: 100px;
   font-family: var(--ff-serif);
   font-weight: normal;
-  margin-top: 1rem;
 }
 
 .planetary-body-desc {
@@ -61,7 +61,6 @@
   line-height: 32px;
   color: hsl(var(--clr-light));
   font-style: normal;
-  margin-block: 1rem;
 }
 
 .divisor {
@@ -71,10 +70,25 @@
 .planetary-body-info-container {
   display: flex;
   margin-top: 1rem;
+  gap: 8rem;
 }
 
 div[class^="info-"] {
   display: grid;
+  text-transform: uppercase;
+}
+
+div[class^="info-"] h4 {
+  font-family: var(--ff-serif);
+  font-size: 28px;
+  font-weight: normal;
+}
+
+div[class^="info-"] p {
+  font-family: var(--ff-sans-cond);
+  font-size: 14px;
+  letter-spacing: 2.36px;
+  color: hsl(var(--clr-light));
 }
 
 @media (width <= 1024px) {

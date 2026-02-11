@@ -20,7 +20,7 @@ function Destination() {
         <div className="img-container">
           <picture>
             <source srcSet={moonWebp} type="image/webp" />
-            <img src={moonPng} alt="An image of the moon" />
+            <img src={moonPng} alt="An image of the moon" width={375} height={375}/>
           </picture>
         </div>
         <div className="destination-contents__info">
