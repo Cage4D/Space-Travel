@@ -12,8 +12,7 @@
   grid-template-rows: 1fr 5fr;
   color: white;
   margin-inline: 10.3125rem;
-  margin-top: 10rem;
-  border: 1px solid red;
+  margin-top: 8rem;
 }
 
 .destination-text {
@@ -33,7 +32,6 @@
 .destination-contents__info {
   display: flex;
   flex-direction: column;
-  border: 1px solid blue;
 }
 
 .planetary-body-names-group {
