@@ -61,7 +61,7 @@
   font-family: var(--ff-sans-normal);
   text-align: left;
   line-height: 32px;
-  color: var(--clr-light);
+  color: hsl(var(--clr-light));
   font-style: normal;
   margin-block: 1rem;
 }
