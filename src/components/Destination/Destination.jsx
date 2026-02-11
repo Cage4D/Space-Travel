@@ -1,16 +1,9 @@
+import React from "react";
 import "./destination.css";
-import {
-  moonPng,
-  moonWebp,
-  europaPng,
-  europaWebp,
-  marsPng,
-  marsWebp,
-  titanPng,
-  titanWebp,
-} from "./exports";
+import { contents } from "./exports";
 
 function Destination() {
+  const [planet, setPlanet] = React.useState(contents[0]);
   return (
     <div className="destination-container">
       <section className="destination-contents">
@@ -19,33 +12,38 @@ function Destination() {
         </p>
         <div className="img-container">
           <picture>
-            <source srcSet={moonWebp} type="image/webp" />
-            <img src={moonPng} alt="An image of the moon" width={375} height={375}/>
+            <source srcSet={planet.webp} type="image/webp" />
+            <img
+              src={planet.png}
+              alt="An image of the moon"
+              width={375}
+              height={375}
+            />
           </picture>
         </div>
         <div className="destination-contents__info">
           <div className="planetary-body-names-group">
-            <button type="button">Moon</button>
-            <button type="button">Mars</button>
-            <button type="button">Europa</button>
-            <button type="button">Titan</button>
+            {contents.map((item) => (
+              <button
+                key={item.name}
+                type="button"
+                onClick={() => setPlanet(item)}
+              >
+                {item.name}
+              </button>
+            ))}
           </div>
-          <h3 className="planetary-body-name">MOON</h3>
-          <p className="planetary-body-desc">
-            See our planet as you’ve never seen it before. A perfect relaxing
-            trip away to help regain perspective and come back refreshed. While
-            you’re there, take in some history by visiting the Luna 2 and Apollo
-            11 landing sites.
-          </p>
+          <h3 className="planetary-body-name">{planet.name.toUpperCase()}</h3>
+          <p className="planetary-body-desc">{planet.description}</p>
           <div className="divisor"></div>
           <div className="planetary-body-info-container">
             <div className="info-1">
               <p>avg. distance</p>
-              <h4>50,000 KM</h4>
+              <h4>{planet.avgDistance}</h4>
             </div>
             <div className="info-2">
               <p>Est. travel time</p>
-              <h4>2 DAYS</h4>
+              <h4>{planet.travelTime}</h4>
             </div>
           </div>
         </div>
