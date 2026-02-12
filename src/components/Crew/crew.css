@@ -92,6 +92,10 @@
   margin-bottom: 2rem;
 }
 
+.crew-active {
+  background: hsl(var(--clr-white));
+}
+
 @media (width <= 1024px) {
   .crew-container {
     background: url("../../assets/crew/background-crew-tablet.jpg") center
