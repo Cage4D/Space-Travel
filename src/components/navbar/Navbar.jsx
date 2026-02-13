@@ -1,7 +1,10 @@
+import React from "react"
 import "./navbar.css";
-import { Link } from "react-router";
+import { NavLink } from "react-router";
 
 function Navbar() {
+  const paths = ["Home", "Destination", "Crew", "Technology"]
+  const [currentPath, setCurrentPath] = React.useState(paths[0])
   return (
     <nav className="nav_bar">
       <div className="logo-container">
@@ -28,22 +31,15 @@ function Navbar() {
       </label>
       <div className="nav-container">
         <ul className="nav-container__list">
-          <li>
-            <span>00</span>
-            <Link to="/" className="nav-link">Home</Link>
-          </li>
-          <li>
-            <span>01</span>
-            <Link to="/destination" className="nav-link">Destination</Link>
-          </li>
-          <li>
-            <span>02</span>
-            <Link to="/crew" className="nav-link">Crew</Link>
-          </li>
-          <li>
-            <span>03</span>
-            <Link to="/technology" className="nav-link">Technology</Link>
-          </li>
+          {paths.map((item, index) => (
+            <li
+            key={item}>
+              <span>0{index}</span>
+              <NavLink 
+              to={item === "Home" ? "/" : item.toLowerCase()}
+              className={({isActive}) => `nav-link ${isActive ? "nav-active": ""}`}>{item}</NavLink>
+            </li>
+          ))}
         </ul>
       </div>
     </nav>
