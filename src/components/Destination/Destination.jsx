@@ -27,6 +27,7 @@ function Destination() {
               <button
                 key={item.name}
                 type="button"
+                className = {item.name === planet.name ? "dest-active" : ""}
                 onClick={() => setPlanet(item)}
               >
                 {item.name}
