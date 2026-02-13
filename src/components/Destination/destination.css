@@ -65,6 +65,10 @@
   opacity: 0.5;
 }
 
+.dest-active::after {
+  opacity: 1;
+}
+
 .planetary-body-name {
   font-size: 100px;
   font-family: var(--ff-serif);
