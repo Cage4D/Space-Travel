@@ -76,6 +76,16 @@
   transition: opacity 0.3s ease;
 }
 
+.nav-active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: hsl(var(--clr-white));
+}
+
 .nav-container__list li:hover::after {
   opacity: 0.5;
 }
