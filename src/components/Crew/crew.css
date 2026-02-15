@@ -83,7 +83,12 @@
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background: none;
+  background: hsl(var(--clr-white));
+  opacity: 0.17;
+}
+
+.crew-btn:hover {
+  opacity: 0.5;
 }
 
 .crew-button-group {
@@ -94,6 +99,7 @@
 
 .crew-active {
   background: hsl(var(--clr-white));
+  opacity: 1;
 }
 
 @media (width <= 1024px) {
