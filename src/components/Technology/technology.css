@@ -33,6 +33,8 @@
   border-radius: 50%;
   border: 1px solid hsl(var(--clr-white));
   color: hsl(var(--clr-white));
+  font-family: var(--ff-serif);
+  font-size: 2rem;
   background: none;
 }
 
