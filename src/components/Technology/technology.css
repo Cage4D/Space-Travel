@@ -84,6 +84,11 @@
   line-height: 2rem;
 }
 
+.active-tech-btn {
+  background: #FFFFFF;
+  color: #000000;
+}
+
 @media (width <= 1024px) {
   .technology-container {
     background: url("../../assets/technology/background-technology-tablet.jpg") center center / cover no-repeat;

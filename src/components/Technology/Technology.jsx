@@ -14,7 +14,7 @@ function Technology() {
           {contents.map((item, index) => (
             <button
               key={item}
-              className="tech-btn"
+              className={spaceItem.header === item.header ? "tech-btn active-tech-btn" : "tech-btn"}
               onClick={() => setSpaceItem(item)}
             >
               {index + 1}
