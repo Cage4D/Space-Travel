@@ -31,11 +31,15 @@
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  border: 1px solid hsl(var(--clr-white));
+  border: 1px solid #FFFFFF25;
   color: hsl(var(--clr-white));
   font-family: var(--ff-serif);
   font-size: 2rem;
   background: none;
+}
+
+.tech-btn:hover {
+  border: 1px solid #FFFFFF;
 }
 
 .technology-info {
