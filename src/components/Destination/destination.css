@@ -37,6 +37,11 @@
   justify-content: space-between;
 }
 
+.planetary-body-image {
+  width: 445;
+  height: 445;
+}
+
 .planetary-body-names-group {
   display: flex;
   gap: 1rem;
@@ -156,11 +161,25 @@ div[class^="info-"] p {
     width: 100%;
     margin-bottom: calc(var(--margin) - 3rem);
   }
+
+  .planetary-body-image {
+    width: 300;
+    height: 300;
+  }
 }
 
 @media (width <= 768px) {
   .destination-container {
     background: url("../../assets/destination/background-destination-mobile.jpg")
       center center / cover no-repeat;
+  }
+
+  .destination-text {
+    align-self: center;
+  }
+
+  .planetary-body-image {
+    width: 175;
+    height: 175;
   }
 }

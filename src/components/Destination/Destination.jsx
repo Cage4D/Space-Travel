@@ -16,8 +16,7 @@ function Destination() {
             <img
               src={planet.png}
               alt="An image of the moon"
-              width={375}
-              height={375}
+              className="planetary-body-image"
             />
           </picture>
         </div>
