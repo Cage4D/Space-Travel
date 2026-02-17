@@ -1,9 +1,11 @@
 .destination-container {
   min-height: 100vh;
   width: 100%;
-  background: url("../../assets/destination/background-destination-desktop.jpg") center center / cover no-repeat;
+  background: url("../../assets/destination/background-destination-desktop.jpg")
+    center center / cover no-repeat;
   display: grid;
   place-items: center;
+  --margin: 5rem;
 }
 
 .destination-contents {
@@ -85,7 +87,7 @@
 }
 
 .divisor {
-  border-top: 1px solid #383B4B;
+  border-top: 1px solid #383b4b;
 }
 
 .planetary-body-info-container {
@@ -114,12 +116,51 @@ div[class^="info-"] p {
 
 @media (width <= 1024px) {
   .destination-container {
-    background: url("../../assets/destination/background-destination-tablet.jpg") center center / cover no-repeat;
+    background: url("../../assets/destination/background-destination-tablet.jpg")
+      center center / cover no-repeat;
+    align-items: start;
+  }
+
+  .destination-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .destination-text {
+    align-self: flex-start;
+  }
+
+  .destination-contents__info {
+    align-items: center;
+  }
+
+  .img-container {
+    margin-block: var(--margin);
+  }
+
+  .planetary-body-names-group {
+    margin-bottom: var(--margin);
+  }
+
+  .planetary-body-name {
+    margin-bottom: calc(var(--margin) - 1.5rem);
+  }
+
+  .planetary-body-desc {
+    text-align: center;
+    margin-bottom: calc(var(--margin) - 1rem);
+  }
+
+  .divisor {
+    width: 100%;
+    margin-bottom: calc(var(--margin) - 3rem);
   }
 }
 
 @media (width <= 768px) {
   .destination-container {
-    background: url("../../assets/destination/background-destination-mobile.jpg") center center / cover no-repeat;
+    background: url("../../assets/destination/background-destination-mobile.jpg")
+      center center / cover no-repeat;
   }
 }
