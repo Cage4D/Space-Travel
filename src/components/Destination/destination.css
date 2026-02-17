@@ -173,13 +173,50 @@ div[class^="info-"] p {
     background: url("../../assets/destination/background-destination-mobile.jpg")
       center center / cover no-repeat;
   }
+  
+  .destination-contents {
+    margin-inline: 0;
+    padding-inline: 2rem;
+    margin-top: 5rem;
+    --margin: 3rem;
+  }
 
   .destination-text {
     align-self: center;
+    text-align: center;
+    font-size: 1rem;
+    letter-spacing: 2.7px;
+  }
+
+  .img-container {
+    margin-inline: var(--margin);
   }
 
   .planetary-body-image {
     width: 175;
     height: 175;
+  }
+
+  .planetary-body-info-container {
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: var(--margin);
+  }
+
+  div[class^="info-"] {
+    place-items: center;
+  }
+
+  .planetary-body-names-group > * {
+    font-size: 14px;
+    letter-spacing: 2.36px;
+  }
+
+  .planetary-body-name {
+    font-size: 56px;
+  }
+
+  .planetary-body-desc {
+    font-size: 15px;
   }
 }
