@@ -107,6 +107,25 @@
     background: url("../../assets/crew/background-crew-tablet.jpg") center
       center / cover no-repeat;
   }
+
+  .crew-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .crew-text {
+    align-self: flex-start;
+    white-space: nowrap;
+  }
+
+  .crew-contents__info {
+    align-items: center;
+  }
+
+  .crew-member-about {
+    text-align: center;
+  }
 }
 
 @media (width <= 768px) {
