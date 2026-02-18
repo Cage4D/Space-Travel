@@ -134,6 +134,7 @@ div[class^="info-"] p {
 
   .destination-text {
     align-self: flex-start;
+    white-space: nowrap;
   }
 
   .destination-contents__info {
@@ -165,6 +166,10 @@ div[class^="info-"] p {
   .planetary-body-image {
     width: 300;
     height: 300;
+  }
+
+  .planetary-body-info-container {
+    margin-bottom: var(--margin);
   }
 }
 
