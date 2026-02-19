@@ -106,12 +106,25 @@
   .crew-container {
     background: url("../../assets/crew/background-crew-tablet.jpg") center
       center / cover no-repeat;
+    --margin: 2rem;
+  }
+
+  .crew-img-container {
+    margin-top: var(--margin);
   }
 
   .crew-contents {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .crew-member-position {
+    margin-bottom: var(--margin);
+  }
+
+  .crew-member-about {
+    margin-block: var(--margin);
   }
 
   .crew-text {
