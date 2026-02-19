@@ -139,6 +139,10 @@
   .crew-member-about {
     text-align: center;
   }
+
+  .crew-button-group {
+    gap: 24px;
+  }
 }
 
 @media (width <= 768px) {
