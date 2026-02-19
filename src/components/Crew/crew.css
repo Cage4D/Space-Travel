@@ -130,6 +130,7 @@
   .crew-text {
     align-self: flex-start;
     white-space: nowrap;
+    margin-bottom: calc(var(--margin) + 3rem);
   }
 
   .crew-contents__info {
