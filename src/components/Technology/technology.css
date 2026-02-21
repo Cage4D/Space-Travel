@@ -93,6 +93,31 @@
   .technology-container {
     background: url("../../assets/technology/background-technology-tablet.jpg") center center / cover no-repeat;
   }
+
+  .technology-contents {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "item1"
+    "item2"
+    "item3"
+    "item4";
+  }
+
+  .technology-text {
+    grid-area: item1;
+  }
+
+  .tech-img-container {
+    grid-area: item2;
+  }
+
+  .technology-button-group {
+    grid-area: item3;
+  }
+
+  .technology-info {
+    grid-area: item4;
+  }
 }
 
 @media (width <= 768px) {
