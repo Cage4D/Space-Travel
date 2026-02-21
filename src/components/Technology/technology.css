@@ -92,6 +92,7 @@
 @media (width <= 1024px) {
   .technology-container {
     background: url("../../assets/technology/background-technology-tablet.jpg") center center / cover no-repeat;
+    --margin-left: 3rem;
   }
 
   .technology-contents {
@@ -101,22 +102,40 @@
     "item2"
     "item3"
     "item4";
+    margin-left: 0;
+    place-items: center;
+    row-gap: 5rem;
   }
 
   .technology-text {
     grid-area: item1;
+    justify-self: self-start;
+    margin-left: var(--margin-left);
   }
-
+  
   .tech-img-container {
     grid-area: item2;
+    width: 100%;
+
+    picture {
+      display: block;
+      width: 100%;
+    }
+
+    img {
+      width: 100%;
+    }
   }
 
   .technology-button-group {
     grid-area: item3;
+    flex-direction: row;
   }
 
   .technology-info {
     grid-area: item4;
+    align-items: center;
+    margin-inline: calc(var(--margin-left) + 5rem);
   }
 }
 
