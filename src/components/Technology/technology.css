@@ -157,4 +157,42 @@
   .technology-container {
     background: url("../../assets/technology/background-technology-mobile.jpg") center center / cover no-repeat;
   }
+
+  .technology-contents {
+    row-gap: 3rem;
+    margin-top: 2rem;
+  }
+  
+  .technology-text {
+    justify-self: center;
+    margin-left: 0;
+    font-size: 1rem;
+  }
+
+  .technology-button-group {
+    margin-right: 0;
+  }
+  
+  .tech-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .technology-about {
+    font-size: 15px;
+  }
+
+  .mini-header {
+    font-size: 14px;
+  }
+
+  .header-text {
+    font-size: 24px;
+  }
+
+  .technology-info {
+    margin-inline: 0;
+    padding: 0 2rem;
+  }
 }
