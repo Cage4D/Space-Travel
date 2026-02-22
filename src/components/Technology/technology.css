@@ -136,6 +136,20 @@
     grid-area: item4;
     align-items: center;
     margin-inline: calc(var(--margin-left) + 5rem);
+    gap: 1rem;
+  }
+
+  .mini-header {
+    font-size: 1rem;
+  }
+
+  .header-text {
+    font-size: 40px;
+  }
+
+  .technology-about {
+    text-align: center;
+    font-size: 1rem;
   }
 }
 
