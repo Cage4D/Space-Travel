@@ -4,7 +4,6 @@ import { NavLink } from "react-router";
 
 function Navbar() {
   const paths = ["Home", "Destination", "Crew", "Technology"]
-  const [currentPath, setCurrentPath] = React.useState(paths[0])
   return (
     <nav className="nav_bar">
       <div className="logo-container">
